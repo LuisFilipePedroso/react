@@ -457,7 +457,7 @@ function commitBeforeMutationEffectsOnFiber(finishedWork: Fiber) {
             prevState,
           );
           if (__DEV__) {
-            const didWarnSet = ((didWarnAboutUndefinedSnapshotBeforeUpdate: any): Set<mixed>);
+            const didWarnSet = (didWarnAboutUndefinedSnapshotBeforeUpdate: any): Set<mixed>;
             if (snapshot === undefined && !didWarnSet.has(finishedWork.type)) {
               didWarnSet.add(finishedWork.type);
               console.error(
